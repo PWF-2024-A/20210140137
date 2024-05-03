@@ -14,8 +14,8 @@
                         @method('post')
 
                         <div class="mb-6">
-                            <x-input-label for="title" :value="_('Title')" />
-                            <x-input id="title" name="title" type="text" class="block w-full mt-1" required autofocus autocomplete="title"/>
+                            <x-input-label for="title" :value="__('Title')" />
+                            <x-text-input id="title" name="title" type="text" class="block w-full mt-1" required autofocus autocomplete="title"/>
                             <x-input-error class="mt-2" :messages="$errors->get('title')" />
                         </div>
 
@@ -24,11 +24,11 @@
                             <a href="{{ route('todo.index') }}"
                                class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest
                                       text-gray-700 uppercase transition duration-150 ease-in-out
-                                      bg-white border border-gray rounded-md shadow-sm dark:bg-gray800
-                                      dark:border-gray500 dark:text-gray300 hover:bggray50
-                                      dark:hover:bggray700 focus:outline-none focus:ring2
-                                      focus:ring-indigo500 focus:ring-offset2
-                                      dark:focus:ring-offsetgray800 disabled:opacity25">
+                                      bg-white border border-gray rounded-md shadow-sm dark:bg-gray-800
+                                      dark:border-gray-500 dark:text-gray-300 hover:bg-gray-50
+                                      dark:hover:bg-gray-700 focus:outline-none focus:ring-2
+                                      focus:ring-indigo-500 focus:ring-offset-2
+                                      -dark:focus:ring-offset-gray-800 disabled:opacity-25">
                                 {{ __('Cancel') }}
                             </a>
                         </div>
