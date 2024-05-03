@@ -48,9 +48,6 @@ Route::middleware('auth')->group(function () {
         Route::patch('/user/{user}/removeadmin' ,[UserController::class, 'removeadmin'])->name('user.removeadmin');
     });
 
-
-
-
 });
 
 require __DIR__.'/auth.php';
